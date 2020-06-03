@@ -55,9 +55,7 @@ const media = {
       if (SIZES[largeKey].max === Infinity) {
         return `@media (min-width: ${SIZES[smallKey].min}px)`;
       } else {
-        return `@media (min-width: ${SIZES[smallKey].min}px) and (max-width: ${
-          SIZES[largeKey].max
-        }px)`;
+        return `@media (min-width: ${SIZES[smallKey].min}px) and (max-width: ${SIZES[largeKey].max}px)`;
       }
     }
   },
@@ -134,6 +132,8 @@ const sharedStyles = {
       },
     },
     content: {
+      filter: 'grayscale(100%)', // BLM
+
       marginTop: 40,
       marginBottom: 120,
 
